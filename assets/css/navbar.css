@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* body */
+body{
+    margin: 0;
+}
+
+/* css for navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    color: yellow;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/*  */
+#brand
+{
+    display: flex;
+}
+#brand-logo{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+#brand-image{
+    width: 65px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#brand-name{
+    margin-left: 100px;
+    align-self: center;
+    color: blanchedalmond;
+    font-size: x-large;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#nav-links{
+    max-width: 315px;
+    flex: auto;
+    margin-right: 25px;
+}
+#navlist-ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+#navlist-ul li a{
+    text-decoration: none;
+    color: #f9f2a6;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: larger;
+}
+#navlist-ul li a:hover{
+    color: white;
+    border-bottom: 2px solid #f9f2a6;
+}
