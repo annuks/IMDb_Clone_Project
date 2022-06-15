@@ -1,3 +1,65 @@
-h1{
-    color: brown;
+body{
+    margin: 0;
+    background: #fff9da;
+}
+#search-bar-container{
+    margin-top: 47px;
+    background: gray;
+    height: 87px;
+    padding: 36px;
+}
+#search-bar-movie-list{
+    display: none;
+    background-color: #f9f2a6;
+    min-height: 40px;
+    max-height: 225px;
+    border-radius: 5px;
+    border-bottom: solid;
+    margin-top: -1px;
+    border-right: solid;
+    border-left: solid;
+}
+
+
+
+/* main container start */
+#main-container{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.c-poster{
+    height: 25vw;
+}
+
+
+#main{
+    padding: 1px;
+    width: 60%;
+}
+/* start: inside main div css */
+
+
+
+
+
+
+/* end: inside main div css */
+#aside{
+    height: 50px;
+    border: solid blue;
+    min-width: 19.2rem;
+    width: 40%;
+}
+
+@media only screen and (max-width: 800px) {
+    #main{
+        width: 100%;
+    }
+    #aside{
+        width: 100%;
+    }
+    .c-poster{
+        height: 50vw;
+    }
 }
