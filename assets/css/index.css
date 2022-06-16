@@ -28,8 +28,14 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+#main{
+    padding: 1px;
+    width: 60%;
+}
+
 .carousel-inner{
     overflow: visible;
+    overflow-x:clip ;
 }
 .c-poster{
     height: 36vw;
@@ -87,16 +93,11 @@ body{
 
 
 
-#main{
-    padding: 1px;
-    width: 60%;
-}
-
 
 /* trainer play container */
 #trailer-play-container{
     position: fixed;
-    /* display: none; */
+    display: none;
     top: 65px;
     width: 99%;
     max-width: 712px;
