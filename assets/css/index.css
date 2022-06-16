@@ -28,16 +28,87 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+.carousel-inner{
+    overflow: visible;
+}
 .c-poster{
     height: 36vw;
 }
+.inner-poster{
+    position: relative;
+}
+.poster-container{
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    bottom: 0;
+}
+.poster-card-image{
+    height: 19vw;
+    width: 14vw;
+    position: absolute;
+    bottom: -30px;
+    left: 43px;
+}
+.poster-image-tag{
+    height: inherit;
+    width: inherit;
+    border: solid 2px white;
+}
+.poster-card-detail{
+    color: white;
+    border-left: solid;
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), black,black);
+    padding-left: 6px;
+}
+.poster-title{
+    font-size: larger;
+}
+.poster-release{
+    text-align: end;
+    font-size: small;
+    margin-right: 6px;
+}
+.poster-trailor-play{
+    border: none;
+    background: none;
+    color: white;
+    font-size: larger;
+    padding:  0;
+    transition: ease-in-out 0.5s;
+}
+.poster-trailor-play:hover{
+    transform: scale(1.5);
+}
+
 
 
 #main{
     padding: 1px;
     width: 60%;
 }
-/* start: inside main div css */
+
+
+/* trainer play container */
+#trailer-play-container{
+    position: fixed;
+    /* display: none; */
+    top: 65px;
+    width: 99%;
+    max-width: 712px;
+    padding: 5px;
+    height: 30rem;
+    background: #ecebc7;
+    z-index: 1;
+}
+
+
+
+/* end: inside main div css */
 
 
 
@@ -62,4 +133,18 @@ body{
     .c-poster{
         height: 64vw;
     }
+    .poster-card-image{
+        height: 34vw;
+        width: 25vw;
+    }
+    .poster-card-detail{
+     font-size: 3.5vw;    
+    }
+    .poster-title{
+        font-size: 3.5vw;
+    }
+    .poster-release{
+        font-size: 2.5vw;
+    }
+    
 }
