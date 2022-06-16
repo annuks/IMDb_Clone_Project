@@ -63,13 +63,12 @@ body{
 }
 .poster-card-detail{
     color: white;
-    border-left: solid;
-    width: 60%;
+    width: 71%;
     position: absolute;
     bottom: 0;
     right: 0;
     background-image: linear-gradient(to bottom, rgba(255,0,0,0), black,black);
-    padding-left: 6px;
+    padding-left: 58px;
 }
 .poster-title{
     font-size: larger;
