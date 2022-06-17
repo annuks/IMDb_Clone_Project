@@ -1,37 +1,52 @@
-function searchMovies(e){
+async function searchMovies(e){
 
     // console.log(e.target.value);
     
     let moviesList;
     // url api 
     let searchString = e.target.value;
+    if(searchString.length==0){
+        let searchResultContainer = document.getElementById("search-result-container");
+        searchResultContainer.style.display="none";
+    }
+    else{
+        let searchResultContainer = document.getElementById("search-result-container");
+        searchResultContainer.style.display="flex";
+    }
+    searchString = searchString.trim();
     let url = `https://www.omdbapi.com/?s=${searchString}&apikey=3b9420f8`      
     let movies = fetch(url).then((response)=> response.json()).then((data)=>data);
     // console.log(movies);
 
     // fetching url api
-    fetch(url)
+    await fetch(url)
     .then((response) => {
         return response.json();
     })                                      
     .then((data) => {
-        console.log(data.Search);
-        searchResult(data.Search)
+        console.log(data);
+        if(data.Response==='True'){
+            searchResult(data.Search);
+        }
+        
     }, true);
 }
 
 function searchResult(moviesList){
     let searchResultContainer = document.getElementById("search-result-container");
     searchResultContainer.innerHTML ='';
-    moviesList.map((movie)=>{
-        let movieHTML = ` <div class="search-movie-card">
-        <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
-        <div  class="search-movie-image"><a href="#tt0371746"><img src=${movie.Poster}></a></div>
-        <div class="search-movie-title">${movie.Title}</div>
-        <div class="search-movie-year">(${movie.Year})</div>
-      </div>`
-      searchResultContainer.innerHTML += movieHTML;
-    })
+    if(moviesList.length>0){
+        moviesList.map((movie)=>{
+            let movieHTML = ` <div class="search-movie-card">
+            <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
+            <div  class="search-movie-image"><a href="#tt0371746"><img src=${movie.Poster}></a></div>
+            <div class="search-movie-title">${movie.Title}</div>
+            <div class="search-movie-year">(${movie.Year})</div>
+            
+        </div>`
+        searchResultContainer.innerHTML += movieHTML;
+        })
+    }
     
 }
 
