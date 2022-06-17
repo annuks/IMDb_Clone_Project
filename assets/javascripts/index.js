@@ -39,7 +39,7 @@ function searchResult(moviesList){
         moviesList.map((movie)=>{
             let movieHTML = ` <div class="search-movie-card">
             <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
-            <div  class="search-movie-image"><a href="#tt0371746"><img src=${movie.Poster}></a></div>
+            <div  class="search-movie-image"><a href="/html/moviepage.html?movie=${movie.imdbID}"><img src=${movie.Poster}></a></div>
             <div class="search-movie-title">${movie.Title}</div>
             <div class="search-movie-year">(${movie.Year})</div>
             

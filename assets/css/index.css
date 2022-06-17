@@ -63,6 +63,7 @@ body{
     border-radius: 7px;
     overflow: auto;
     transition: ease-in-out 0.4s;
+    
 }
 .search-movie-card:hover{
     transform: scale(1.1);
@@ -211,7 +212,7 @@ body{
 
 /* end: inside main div css */
 .aside-container{
-    height: 700px;
+    height: 456px;
     border: #4caf50;
     min-width: 19.2rem;
     width: 40%;
@@ -221,11 +222,10 @@ body{
 .aside{
     display: flex;
     flex-direction: column;
-    border: solid;
-    background-image: linear-gradient(to bottom, rgba(255,0,0,0), black,#f9e93245);
-    height: 140px;
+    height: 152px;
     width: 100%;
     margin-bottom: 2px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 @media only screen and (max-width: 800px) {

@@ -1,3 +1,91 @@
-h1{
-    color: brown;
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Raleway&display=swap');
+
+
+#main-container{
+    margin-top: 120px;
+}
+#movie-container{
+   width: 90%;
+   background-color: black;
+   border-radius: 10px;
+   overflow: auto; 
+   margin-left: 5%;
+   color: #fff9da;  
+}
+
+/* movie title container */
+#title-container{
+    border-bottom: solid #fff9da 1px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#title-container h1{
+    margin: 10px;
+    margin-left: 30px; 
+    font-family: 'Raleway', sans-serif;
+}
+#title-container button{
+    border: none;
+    color: #f4e97c;
+    background: none;
+    height: 35px;
+    margin-right: 7px;
+    font-size: medium;
+    border-radius: 5px;
+    margin-top: 9px;
+    cursor: pointer;
+}
+#title-container button:hover{
+    background: #464040;
+}
+
+#movie-detail-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+#image-container{
+    /* border: solid white 1px; */
+    margin: 5px;
+    width: 300px;
+    height: 445px;
+}
+#image-container img{
+    height: inherit;
+    width: inherit;
+}
+#movie-detail{
+    margin: 10px;
+}
+#title-container-detail{
+    font-size: large;
+}
+#releasing-year{
+    font-size: small;
+    color: lightgray;
+}
+.movie-item-detail{
+    font-size: medium;
+    max-width: 440px;
+}
+#rating-movie-detail{
+    background: #fff9da;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+}
+#plot-item-detail{
+    color: yellow;
+    max-width: 440px;
+    margin: 0;
+    margin-top: -12px;
+}
+@media only screen and (max-width: 600px) {
+    #movie-container{
+        width: 96%;
+        margin-left: 2%; 
+     }
 }
