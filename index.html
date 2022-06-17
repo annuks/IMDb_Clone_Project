@@ -33,85 +33,25 @@
 
     <!-- search bar container -->
     <div id="search-bar-container">
-        <input type="search" class="form-control" placeholder="Search IMDb" style="height: 33px" />
+        <input type="search" class="form-control" placeholder="Search IMDb" style="height: 33px" onkeyup="searchMovies(event)"/>
+        
         <div id="search-bar-movie-list"></div>
     </div>
 
     <!-- search container result  -->
     <div id="search-result-container">
+      <h2 style="position: absolute;left: 30px;top: 5px;">Search Results</h2>
 
+      <!-- search movie card example -->
 
-
-      <div class="search-movie-card">
+      <!-- <div class="search-movie-card">
         <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
         <div  class="search-movie-image"><a href="#tt0371746"><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"></a></div>
         <div class="search-movie-title">Iron Man</div>
         <div class="search-movie-year">(2008)</div>
-      </div>
-      
-      <div class="search-movie-card">
-        <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
-        <div  class="search-movie-image"><a href="#tt0371746"><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"></a></div>
-        <div class="search-movie-title">Iron Man</div>
-        <div class="search-movie-year">(2008)</div>
-      </div>
-      
-      <div class="search-movie-card">
-        <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
-        <div  class="search-movie-image"><a href="#tt0371746"><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"></a></div>
-        <div class="search-movie-title">Iron Man</div>
-        <div class="search-movie-year">(2008)</div>
-      </div>
-      
-      <div class="search-movie-card">
-        <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
-        <div  class="search-movie-image"><a href="#tt0371746"><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"></a></div>
-        <div class="search-movie-title">Iron Man</div>
-        <div class="search-movie-year">(2008)</div>
-      </div>
-      
-      <div class="search-movie-card">
-        <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
-        <div  class="search-movie-image"><a href="#tt0371746"><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"></a></div>
-        <div class="search-movie-title">Iron Man</div>
-        <div class="search-movie-year">(2008)</div>
-      </div>
-      
-      <div class="search-movie-card">
-        <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
-        <div  class="search-movie-image"><a href="#tt0371746"><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"></a></div>
-        <div class="search-movie-title">Iron Man</div>
-        <div class="search-movie-year">(2008)</div>
-      </div>
-      
-      <div class="search-movie-card">
-        <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
-        <div  class="search-movie-image"><a href="#tt0371746"><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"></a></div>
-        <div class="search-movie-title">Iron Man</div>
-        <div class="search-movie-year">(2008)</div>
-      </div>
-      
-      <div class="search-movie-card">
-        <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
-        <div  class="search-movie-image"><a href="#tt0371746"><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"></a></div>
-        <div class="search-movie-title">Iron Man</div>
-        <div class="search-movie-year">(2008)</div>
-      </div>
-      
-      <div class="search-movie-card">
-        <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
-        <div  class="search-movie-image"><a href="#tt0371746"><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"></a></div>
-        <div class="search-movie-title">Iron Man</div>
-        <div class="search-movie-year">(2008)</div>
-      </div>
-      
-      <div class="search-movie-card">
-        <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
-        <div  class="search-movie-image"><a href="#tt0371746"><img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"></a></div>
-        <div class="search-movie-title">Iron Man</div>
-        <div class="search-movie-year">(2008)</div>
-      </div>
-      
+      </div> -->
+     
+     
 
 
 
