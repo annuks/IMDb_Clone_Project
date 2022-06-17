@@ -28,7 +28,7 @@ body{
 
 /* start : search container */
 #search-result-container{
-    display: flex;
+    display: none;
     padding-left: 15px;
     flex-wrap: wrap;
     overflow: auto;
