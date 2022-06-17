@@ -20,6 +20,75 @@ body{
     border-left: solid;
 }
 
+/* start : search container */
+#search-result-container{
+    display: flex;
+    border-radius: 16px;
+    margin: 20px;
+    height: 265px;
+    width: -webkit-fill-available;
+    background: #bacd9b;
+}
+.search-movie-card{
+    margin: 20px;
+    background-color: black;
+    width: 135px;
+    height: 217px;
+    position: relative;
+    border-radius: 7px;
+    overflow: auto;
+    transition: ease-in-out 0.4s;
+}
+.search-movie-card:hover{
+    transform: scale(1.1);
+}
+.search-movie-image{
+    width: inherit;
+    height: 170px;
+}
+.search-movie-image a{
+    width: inherit;
+    height: inherit;
+}
+.search-movie-image a img{
+    width: inherit;
+    height: inherit;
+}
+
+.search-movie-title{
+    color: white;
+    text-align: center;
+}
+.search-movie-year{
+    color: white;
+    text-align: center;
+    font-size: small;
+    margin-top: -6px;
+}
+
+
+
+.add-favourite{
+    position: absolute;
+    border: none;
+    background: darkgray;
+    left: 4px;
+    height: 26px;
+    transition: ease-in-out 0.2s;
+}
+.add-favourite:hover{
+    background-color: white;
+    height: 30px;
+}
+
+
+
+
+
+/* end : search container */
+
+
+
 
 
 /* main container start */
