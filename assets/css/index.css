@@ -4,6 +4,8 @@ body{
     background: #fff9da;
 
 }
+
+/* CSS for search bar container */
 #search-bar-container{
     margin-top: 47px;
     background: gray;
@@ -14,6 +16,7 @@ body{
 #search-bar-container::-webkit-scrollbar{
     width: 20px;
 }
+/* CSS for movie list comes in search bar after searching */
 #search-bar-movie-list{
     display: none;
     background-color: #f9f2a6;
@@ -35,7 +38,7 @@ body{
     border-radius: 16px;
     justify-content: space-evenly;
     margin: 20px;
-    height: 275px;
+    height: 300px;
     width: -webkit-fill-available;
     background: #bacd9b;
     position: relative;
@@ -104,6 +107,14 @@ body{
 }
 .add-favourite:hover{
     background-color: white;
+    height: 30px;
+}
+.add-favourite:focus{
+    background-color: red;
+    height: 30px;
+}
+.add-favourite:visited{
+    background-color: red;
     height: 30px;
 }
 
@@ -225,7 +236,7 @@ body{
     height: 152px;
     width: 100%;
     margin-bottom: 2px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 @media only screen and (max-width: 800px) {

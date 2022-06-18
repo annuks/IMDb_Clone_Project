@@ -16,7 +16,7 @@
 </head>
 <body style="background-color: #fff9da;">
 
-    <!--start: navbar -->
+    <!--Start of Navbar -->
     <nav>
         <div id="brand">
             <div id="brand-logo"><img src="./assets/images/logo.png" id="brand-image"/></div>
@@ -30,21 +30,21 @@
             </ul>
         </div>
     </nav>
-    <!--start: navbar -->
+    <!--End of Navbar -->
     
 
-    <!-- search bar container -->
+    <!--  Search Bar Container  -->
     <div id="search-bar-container">
         <input type="search" class="form-control" placeholder="Search IMDb" style="height: 33px" onkeyup="searchMovies(event)"/>
         
         <div id="search-bar-movie-list"></div>
     </div>
-
-    <!-- search container result  -->
+    <h2 id="search-h2" style="margin: 36px;display: none;">Search Results</h2>
+    <!-- Search Result Container -->
     <div id="search-result-container">
-      <h2 style="position: absolute;left: 30px;top: 5px;">Search Results</h2>
+     
 
-      <!-- search movie card example -->
+      <!-- Search movie card example -->
 
       <!-- <div class="search-movie-card">
         <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
@@ -52,39 +52,31 @@
         <div class="search-movie-title">Iron Man</div>
         <div class="search-movie-year">(2008)</div>
       </div> -->
-     
-     
+     </div>
 
 
-
-    </div>
-
-
-    <!-- maincontainer -->
+    <!-- Main Container -->
     <div id="main-container">
-        <!-- main siv -->
+        <!-- Main Div -->
         <div id="main">
-            
+            <!-- Div for Display in Caraousal -->
             <div id="movie-caraousel">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-
-
+                  <!-- Div for Display inside Caraousal (mini caraosal)--> 
+                  <div class="carousel-inner">
 
                       <div class="carousel-item active inner-poster">
+                      <img src="./assets/images/c-poster1.jpg" class="d-block w-100 c-poster" alt="...">
 
-                        <img src="./assets/images/c-poster1.jpg" class="d-block w-100 c-poster" alt="...">
-
-
+                        <!-- Div for containg First  Poster and other display-->
                         <div class="poster-container">
-  
-                          <div class="poster-card-detail">
-                            
-                            <div class="poster-trailor">
-                              <!-- trailor play button -->
+                        <div class="poster-card-detail">
+
+                        <div class="poster-trailor">
+                              <!-- trailor play button  using bootstrap-->
                               <button class="poster-trailor-play" onclick="trailorPlay(1)" ><i class="fa-solid fa-circle-play"></i></button> Play Trailor
                             </div>
-
+                            <!-- Div for containin poster details -->
                             <div class="poster-title">
                               Brahmastra Part One: Shiva (2022)
                             </div>
@@ -100,7 +92,7 @@
 
 
 
-
+                      <!-- Div for containg second Poster and their display-->
                       <div class="carousel-item inner-poster">
                         <img src="./assets/images/c-poster2.jpg" class="d-block w-100 c-poster" alt="...">
                         
@@ -110,46 +102,41 @@
                           <div class="poster-card-detail">
                             
                             <div class="poster-trailor">
-                              <button class="poster-trailor-play" onclick="trailorPlay(2)" ><i class="fa-solid fa-circle-play"></i></button> Play Trailor
-                            </div>
+                              <!-- trailor play button  using bootstrap-->
 
-                            <div class="poster-title">
+                              <button class="poster-trailor-play" onclick="trailorPlay(2)" ><i class="fa-solid fa-circle-play"></i></button> Play Trailor
+                             </div>
+                             <div class="poster-title">
                               She HULk
-                            </div>
+                             </div>
 
                             <div class="poster-release">
                               Release Date : 9 September 2022</div>
                             </div>
-
-                        </div>
+                            </div>
 
                         <div class="poster-card-image"><img class="poster-image-tag" src="./assets/images/poster2.jpeg" ></div>
-                        
-
-
-                      </div>
+                        </div>
 
 
 
 
-
+                      <!-- Div for containg third Poster and their display detail-->
 
                       <div class="carousel-item inner-poster">
                         <img src="./assets/images/c-poster3.jpg" class="d-block w-100 c-poster" alt="...">
-                       
-                        <div class="poster-container">
-
-                          
-                          <div class="poster-card-detail">
+                       <div class="poster-container">
+                        <div class="poster-card-detail">
                             
-                            <div class="poster-trailor">
-                              <button class="poster-trailor-play" onclick="trailorPlay(3)" ><i class="fa-solid fa-circle-play"></i></button> Play Trailor
+                          <div class="poster-trailor">
+                              <!-- trailor play button  using bootstrap-->
+
+                            <button class="poster-trailor-play" onclick="trailorPlay(3)" ><i class="fa-solid fa-circle-play"></i></button> Play Trailor
                             </div>
 
                             <div class="poster-title">
                               Avatar
                             </div>
-
                             <div class="poster-release">
                               Release Date : 9 September 2022</div>
                             </div>
@@ -159,16 +146,13 @@
                          
 
                       </div>
-
-
-
-
-
-                    </div>
+                      </div>
+                      <!-- Button for Playing Trailor using Bootstrap -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
+                    <!-- Button for Playing Trailor using Bootstrap -->
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
@@ -177,7 +161,7 @@
 
 
 
-                  <!-- trailer Playing Div -->
+                  <!-- trailer Playing  and Closing Div -->
                   <div id="trailer-play-container">
                     <div><button class="btn btn-outline-danger float-end my-2" onclick="closeTrailor()">X</button></div>
                     <div id="trailer-embed">
@@ -187,7 +171,7 @@
             </div>
 
 
-            <h1>h1</h1>
+            
             
         </div>
 
@@ -207,5 +191,6 @@
 
 
     <script src="./assets/javascripts/index.js"></script>
+    <script src="../assets/javascripts/favUnfav.js"></script>
 </body>
 </html>

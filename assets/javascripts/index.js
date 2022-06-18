@@ -6,10 +6,23 @@ async function searchMovies(e){
     // url api 
     let searchString = e.target.value;
     if(searchString.length==0){
+        document.getElementById("search-h2").style.display = "none";
         let searchResultContainer = document.getElementById("search-result-container");
         searchResultContainer.style.display="none";
     }
+    else if(searchString.length<=2){
+        let searchResultContainer = document.getElementById("search-result-container");
+        searchResultContainer.style.display="none";
+        let searchH2 = document.getElementById("search-h2")
+        searchH2.innerText = 'Search Results'
+        searchH2.style.display = "block";
+        let displayHTML = `<h5 style="color:red">Please enter atlease size of three key.....</h5>`
+        searchH2.innerHTML += displayHTML;
+    }
     else{
+        let searchH2 = document.getElementById("search-h2")
+        searchH2.innerText = 'Search Results'
+        searchH2.style.display = "block";
         let searchResultContainer = document.getElementById("search-result-container");
         searchResultContainer.style.display="flex";
     }
@@ -35,10 +48,24 @@ async function searchMovies(e){
 function searchResult(moviesList){
     let searchResultContainer = document.getElementById("search-result-container");
     searchResultContainer.innerHTML ='';
+    let favMovieCheck = [];
+    if (window.localStorage.getItem("favourite")) {
+        favMovieCheck = JSON.parse(window.localStorage.getItem("favourite"));
+    }
     if(moviesList.length>0){
         moviesList.map((movie)=>{
+            let imdb = movie.imdbID;
             let movieHTML = ` <div class="search-movie-card">
-            <button class="add-favourite"><i class="fa-solid fa-shield-heart"></i></button>
+            ${
+                favMovieCheck.includes(imdb)
+                  ? "<button style='background:red' class='add-favourite'  onclick='unFavourite("+
+                  JSON.stringify(imdb)+
+                  ")'><i class='fa-solid fa-heart-circle-xmark'></i></button>"
+                  : "<button class='add-favourite' onclick='addFavourite("+
+                        JSON.stringify(imdb)+
+                        ")'><i class='fa-solid fa-shield-heart'></i></button>"
+                    
+              }
             <div  class="search-movie-image"><a href="/html/moviepage.html?movie=${movie.imdbID}"><img src=${movie.Poster}></a></div>
             <div class="search-movie-title">${movie.Title}</div>
             <div class="search-movie-year">(${movie.Year})</div>
@@ -75,3 +102,7 @@ function trailorPlay(movie){
     }
 
 }
+
+
+
+
