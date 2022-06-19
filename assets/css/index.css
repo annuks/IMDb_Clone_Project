@@ -1,7 +1,7 @@
 /* CSS for body Tag */
 body{
     margin: 0;
-    background: #fff9da;
+    background-color: #1a1e21;
 
 }
 
@@ -44,6 +44,9 @@ body{
     position: relative;
     padding-top: 36px;
 }
+/* end of: search container */
+
+/* CSS for customised scroll bar */
 #search-result-container::-webkit-scrollbar {
     width: 10px;
 }
@@ -57,6 +60,10 @@ body{
     border-radius: 20px;
     height: 5px;
 }
+/* CSS for customised scroll bar ends */
+
+/* CSS for searched movie card*/
+
 .search-movie-card{
     margin: 8px;
     background-color: black;
@@ -68,9 +75,12 @@ body{
     transition: ease-in-out 0.4s;
     
 }
+/* CSS for on hover effect */
 .search-movie-card:hover{
     transform: scale(1.1);
 }
+
+/* CSS for searched movie images and its anchor tag */
 .search-movie-image{
     width: inherit;
     height: 170px;
@@ -83,7 +93,7 @@ body{
     width: inherit;
     height: inherit;
 }
-
+/* CSS for searched movie title and its year display */
 .search-movie-title{
     color: white;
     text-align: center;
@@ -95,7 +105,7 @@ body{
     margin-top: -6px;
 }
 
-
+/* CSS for adding to favourite */
 
 .add-favourite{
     position: absolute;
@@ -118,10 +128,6 @@ body{
     height: 30px;
 }
 
-
-
-
-
 /* end : search container */
 
 
@@ -130,13 +136,15 @@ body{
 
 /* main container start */
 #main-container{
-    background-color: white;
     display: flex;
     flex-wrap: wrap;
 }
 #main{
     padding: 1px;
     width: 60%;
+}
+h2{
+    color: white;
 }
 
 .carousel-inner{
@@ -184,6 +192,7 @@ body{
     font-size: small;
     margin-right: 6px;
 }
+/* CSS for  playing trailor*/
 .poster-trailor-play{
     border: none;
     background: none;
@@ -195,56 +204,78 @@ body{
 .poster-trailor-play:hover{
     transform: scale(1.5);
 }
-
-
-
-
-/* trainer play container */
+/* trailor play container */
 #trailer-play-container{
     position: fixed;
     display: none;
     top: 65px;
     width: 99%;
-    max-width: 470px;
+    max-width: 700px;
     padding: 5px;
     height: 30rem;
     background: #ecebc7;
     z-index: 1;
 }
 
-
-
-/* end: inside main div css */
+/* End of main div CSS */
 
 
 
 
 
 
-/* end: inside main div css */
+/*  CSS for aside section*/
 .aside-container{
-    height: 456px;
-    border: #4caf50;
     min-width: 19.2rem;
     width: 40%;
-    background-color: #0000001c;
-    border: ridge;
+    background: black;
+    padding: 10px;
 }
-.aside{
-    display: flex;
-    flex-direction: column;
-    height: 152px;
+#recent-movie-container{
     width: 100%;
-    margin-bottom: 2px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding-bottom: 1px;
+    border-radius: 9px;
+    background-color: #f5efa4;
+}
+.movie-box{
+    display: flex;
+    overflow: hidden;
+    margin: 10px;
+    background-color: #0a0c2a;
+    border-radius: 3px;
+    color: whitesmoke;
+}
+.movie-box-detail{
+    padding: 10px;
 }
 
+
+#fan-favourite{
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;
+}
+#fan-favourite-container{
+    width: 100%;
+    padding-bottom: 1px;
+    border-radius: 9px;
+    background-color: #f5efa4;
+}
+
+
+
+
+
+
+
+/* CSS for responsive content on specific device */
 @media only screen and (max-width: 800px) {
     #main{
         width: 100%;
     }
-    #aside{
+    .aside-container{
         width: 100%;
+        margin-top: 55px;
     }
     .c-poster{
         height: 64vw;

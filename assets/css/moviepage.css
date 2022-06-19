@@ -1,7 +1,7 @@
 /* fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Raleway&display=swap');
 
-
+/* CSS for main container section */
 #main-container{
     margin-top: 120px;
 }
@@ -42,19 +42,19 @@
     color: red;
 }
 
+/* CSS for movie's different parameters display */
 #movie-detail-container{
     display: flex;
     flex-wrap: wrap;
 }
 #image-container{
-    /* border: solid white 1px; */
     margin: 5px;
-    width: 300px;
+    text-align: center;
     height: 445px;
 }
 #image-container img{
-    height: inherit;
-    width: inherit;
+    height: 445px;
+    width: 300px;
 }
 #movie-detail{
     margin: 10px;
@@ -84,9 +84,25 @@
     margin: 0;
     margin-top: -12px;
 }
-@media only screen and (max-width: 600px) {
-    #movie-container{
-        width: 96%;
-        margin-left: 2%; 
-     }
+
+@media only screen and (max-width: 872px) {
+    #image-container{
+        width: 100%;
+    }
+    #movie-detail{
+        margin: 10px 10%;
+        padding: 20px;
+    }
 }
+/* CSS for responsive content on specific device */
+@media only screen and (max-width: 600px) {
+
+    #image-container{
+        width: 100%;
+    }
+    #movie-detail{
+        margin: 10px 5%;
+        padding: 20px;
+    }
+}
+

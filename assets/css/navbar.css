@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-
+/* importing resorces for font style */
 /* body */
 body{
     margin: 0;
@@ -20,7 +20,9 @@ nav{
     z-index: 999;
 }
 
-/*  */
+/*  end of css for navbar*/
+
+/* css for brand section */
 #brand
 {
     display: flex;
@@ -42,6 +44,11 @@ nav{
     font-size: x-large;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
+
+/* end of  css for brand section */
+
+
+/* css for navigation links */
 #nav-links{
     max-width: 315px;
     flex: auto;
@@ -64,3 +71,5 @@ nav{
     color: white;
     border-bottom: 2px solid #f9f2a6;
 }
+
+/* end of css for navigation links */

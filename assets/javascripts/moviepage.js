@@ -73,7 +73,7 @@ async function movieDetail(movie){
             <div class="movie-item-detail"><b>BoxOffice :</b> ${movie.BoxOffice}</div>
             <div class="movie-item-detail"><b>Awards :</b> ${movie.Awards}</div>
             <h2>Plot</h2>
-            <h3 id="plot-item-detail">${movie.Plot}</h3>
+            <h6 id="plot-item-detail">${movie.Plot}</h6>
             
             
                 
