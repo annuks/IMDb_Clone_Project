@@ -1,108 +1,105 @@
 /* fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam&family=Raleway&display=swap");
 
 /* CSS for main container section */
-#main-container{
-    margin-top: 120px;
+#main-container {
+  margin-top: 120px;
 }
-#movie-container{
-   width: 90%;
-   background-color: black;
-   border-radius: 10px;
-   overflow: auto; 
-   margin-left: 5%;
-   color: #fff9da;  
+#movie-container {
+  width: 90%;
+  background-color: black;
+  border-radius: 10px;
+  overflow: auto;
+  margin-left: 5%;
+  color: #fff9da;
 }
 
 /* movie title container */
-#title-container{
-    border-bottom: solid #fff9da 1px;
-    display: flex;
-    justify-content: space-between;
-
+#title-container {
+  border-bottom: solid #fff9da 1px;
+  display: flex;
+  justify-content: space-between;
 }
-#title-container h1{
-    margin: 10px;
-    margin-left: 30px; 
-    font-family: 'Raleway', sans-serif;
+#title-container h1 {
+  margin: 10px;
+  margin-left: 30px;
+  font-family: "Raleway", sans-serif;
 }
-#title-container button{
-    border: none;
-    color: #f4e97c;
-    background: none;
-    height: 38px;
-    margin-right: 7px;
-    font-size: medium;
-    border-radius: 5px;
-    margin-top: 7px;
-    cursor: pointer;
+#title-container button {
+  border: none;
+  color: #f4e97c;
+  background: none;
+  height: 38px;
+  margin-right: 7px;
+  font-size: medium;
+  border-radius: 5px;
+  margin-top: 7px;
+  cursor: pointer;
 }
-#title-container button:hover{
-    background: #464040;
-    color: red;
+#title-container button:hover {
+  background: #464040;
+  color: red;
 }
 
 /* CSS for movie's different parameters display */
-#movie-detail-container{
-    display: flex;
-    flex-wrap: wrap;
+#movie-detail-container {
+  display: flex;
+  flex-wrap: wrap;
 }
-#image-container{
-    margin: 5px;
-    text-align: center;
-    height: 445px;
+#image-container {
+  margin: 5px;
+  text-align: center;
+  height: 445px;
 }
-#image-container img{
-    height: 445px;
-    width: 300px;
+#image-container img {
+  height: 445px;
+  width: 300px;
 }
-#movie-detail{
-    margin: 10px;
+#movie-detail {
+  margin: 10px;
 }
-#title-container-detail{
-    font-size: large;
+#title-container-detail {
+  font-size: large;
 }
-#releasing-year{
-    font-size: small;
-    color: lightgray;
+#releasing-year {
+  font-size: small;
+  color: lightgray;
 }
-.movie-item-detail{
-    font-size: medium;
-    max-width: 440px;
+.movie-item-detail {
+  font-size: medium;
+  max-width: 440px;
 }
-#rating-movie-detail{
-    background: #ded7b5;
-    border-radius: 10px;
-    height: 52px;
-    padding: 8px;
-    margin: 10px;
-    color: black;
+#rating-movie-detail {
+  background: #ded7b5;
+  border-radius: 10px;
+  height: 52px;
+  padding: 8px;
+  margin: 10px;
+  color: black;
 }
-#plot-item-detail{
-    color: yellow;
-    max-width: 440px;
-    margin: 0;
-    margin-top: -12px;
+#plot-item-detail {
+  color: yellow;
+  max-width: 440px;
+  margin: 0;
+  margin-top: -12px;
 }
 
 @media only screen and (max-width: 872px) {
-    #image-container{
-        width: 100%;
-    }
-    #movie-detail{
-        margin: 10px 10%;
-        padding: 20px;
-    }
+  #image-container {
+    width: 100%;
+  }
+  #movie-detail {
+    margin: 10px 10%;
+    padding: 20px;
+  }
 }
 /* CSS for responsive content on specific device */
 @media only screen and (max-width: 600px) {
-
-    #image-container{
-        width: 100%;
-    }
-    #movie-detail{
-        margin: 10px 5%;
-        padding: 20px;
-    }
+  #image-container {
+    width: 100%;
+  }
+  #movie-detail {
+    margin: 10px 5%;
+    padding: 20px;
+  }
 }
-
