@@ -70,4 +70,38 @@ nav {
   border-bottom: 2px solid #f9f2a6;
 }
 
+#nav-side-bar{
+  display: none;
+}
+
+#nav-side-bar button{
+  margin: 10PX;
+  background: none;
+  color: #f9d732;
+  border: none;
+  font-size: x-large;
+}
+
+@media only screen and (max-width: 500px) {
+  #nav-side-bar{
+    display: block;
+  }
+  #nav-links{
+    position: fixed;
+    background-color: black;
+    right: 0;
+    margin: 0;
+    top: 58px;
+    border-top: solid;
+    height: 0;
+    padding-right: 17px;
+    border-bottom: solid;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+  }
+  #nav-links ul{
+    list-style-type: none;
+    display: block;
+  }
+}
 /* end of css for navigation links */

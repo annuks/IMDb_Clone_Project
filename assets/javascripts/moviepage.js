@@ -1,7 +1,7 @@
 // code to display all details of the clicked movie on search result page
 
 let urlParams = new URLSearchParams(window.location.search);
-let imdbID = urlParams.get("movie");
+let imdbID = urlParams.get("movie"); 
 
 fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=3b9420f8`)
   .then((response) => {
@@ -10,7 +10,7 @@ fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=3b9420f8`)
   .then((data) => {
     console.log(data);
     if (data.Response === "True") {
-      movieDetail(data);
+      movieDetail(data); 
     }
   }, true);
 
